@@ -82,7 +82,8 @@ const BookingPage = () => {
       calLink: 'sananaliyev/paket-1',
       icon: Package,
       color: 'bg-gradient-to-br from-gold to-gold-dark',
-      description: 'Saç Kəsimi + Saqqal Kəsimi + Lepucka'
+      description: 'Saç Kəsimi + Saqqal Kəsimi + Lepucka',
+      popular: true
     },
     {
       id: 'paket-2',
@@ -94,7 +95,7 @@ const BookingPage = () => {
       icon: Package,
       color: 'bg-gradient-to-br from-gold-dark to-gold',
       description: 'Saç Kəsimi + Saqqal Kəsimi + Lepucka + Saç Boyama (Xına)',
-      popular: true
+      popular: false
     }
   ]
 

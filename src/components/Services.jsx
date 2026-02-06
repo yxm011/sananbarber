@@ -58,7 +58,7 @@ const Services = ({ onBookAppointment }) => {
       title: 'Paket 1',
       price: '20 AZN',
       services: ['Saç Kəsimi', 'Saqqal Kəsimi', 'Lepucka'],
-      popular: false
+      popular: true
     },
     {
       id: 'paket-2',
@@ -66,7 +66,7 @@ const Services = ({ onBookAppointment }) => {
       title: 'Paket 2',
       price: '30 AZN',
       services: ['Saç Kəsimi', 'Saqqal Kəsimi', 'Lepucka', 'Saç Boyama (Xına)'],
-      popular: true
+      popular: false
     }
   ]
 
