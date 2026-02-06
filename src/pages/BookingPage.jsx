@@ -89,7 +89,7 @@ const BookingPage = () => {
       name: 'Paket 2',
       nameAz: 'paket 2',
       duration: '90 dəq',
-      price: '35 AZN',
+      price: '30 AZN',
       calLink: 'sananaliyev/paket-2',
       icon: Package,
       color: 'bg-gradient-to-br from-gold-dark to-gold',
