@@ -6,7 +6,7 @@ import WhatsAppButton from './components/WhatsAppButton'
 
 function App() {
   return (
-    <Router>
+    <Router basename="/sananbarber">
       <div className="min-h-screen">
         <Routes>
           <Route path="/" element={<HomePage />} />
