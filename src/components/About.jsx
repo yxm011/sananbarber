@@ -37,11 +37,11 @@ const About = () => {
 
             <div className="grid grid-cols-2 gap-6 mb-8">
               <div className="text-center p-6 bg-white rounded-lg shadow-md">
-                <div className="text-5xl font-heading font-bold text-gold mb-2">100%</div>
+                <div className="text-4xl font-heading font-bold text-gold mb-2">100%</div>
                 <div className="text-sm uppercase tracking-wide text-gray-600">Müştəri Məmnuniyyəti</div>
               </div>
               <div className="text-center p-6 bg-white rounded-lg shadow-md">
-                <div className="text-5xl font-heading font-bold text-gold mb-2">★★★★★</div>
+                <div className="text-3xl font-heading font-bold text-gold mb-2">★★★★★</div>
                 <div className="text-sm uppercase tracking-wide text-gray-600">Premium Xidmət</div>
               </div>
             </div>
