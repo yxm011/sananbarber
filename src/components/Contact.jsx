@@ -81,50 +81,6 @@ const Contact = () => {
               </div>
             </div>
           </div>
-
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-heading font-bold mb-6">Mesaj Göndərin</h3>
-            <form className="space-y-4">
-              <div>
-                <label className="block text-sm font-semibold mb-2">Adınız</label>
-                <input 
-                  type="text" 
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-gold"
-                  placeholder="Adınızı daxil edin"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-semibold mb-2">Telefon</label>
-                <input 
-                  type="tel" 
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-gold"
-                  placeholder="+994 XX XXX XX XX"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-semibold mb-2">Email</label>
-                <input 
-                  type="email" 
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-gold"
-                  placeholder="email@example.com"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-semibold mb-2">Mesajınız</label>
-                <textarea 
-                  rows="4"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-gold"
-                  placeholder="Mesajınızı yazın..."
-                ></textarea>
-              </div>
-              <button 
-                type="submit"
-                className="w-full bg-gold hover:bg-gold-dark text-black font-semibold py-3 rounded-lg transition-colors"
-              >
-                GÖNDƏR
-              </button>
-            </form>
-          </div>
         </div>
 
         <div className="mt-12 rounded-lg overflow-hidden shadow-lg">
