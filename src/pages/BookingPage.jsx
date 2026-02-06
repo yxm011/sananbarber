@@ -99,6 +99,9 @@ const BookingPage = () => {
   ]
 
   useEffect(() => {
+    // Scroll to top when page loads or service changes
+    window.scrollTo(0, 0)
+    
     if (serviceId) {
       const service = services.find(s => s.id === serviceId)
       if (service) {
