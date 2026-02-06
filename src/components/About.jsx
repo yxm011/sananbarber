@@ -9,8 +9,8 @@ const About = () => {
           <div className="relative">
             <div className="relative overflow-hidden rounded-lg shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?q=80&w=2070&auto=format&fit=crop"
-                alt="Barber at work"
+                src="/sananbarber/sanan-barber.jpg"
+                alt="Sanan Aliyev - Professional Barber"
                 className="w-full h-[600px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
