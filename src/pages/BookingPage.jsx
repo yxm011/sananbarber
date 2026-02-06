@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import { ArrowLeft, Clock, Scissors, Sparkles } from 'lucide-react'
+import { ArrowLeft, Clock, Scissors, Sparkles, Package } from 'lucide-react'
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
 
@@ -72,6 +72,29 @@ const BookingPage = () => {
       calLink: 'sananaliyev/kenar-xetlerin-temizlenmesi',
       icon: Scissors,
       color: 'bg-gradient-to-br from-oxford-light to-oxford'
+    },
+    {
+      id: 'paket-1',
+      name: 'Paket 1',
+      nameAz: 'paket 1',
+      duration: '60 dəq',
+      price: '20 AZN',
+      calLink: 'sananaliyev/paket-1',
+      icon: Package,
+      color: 'bg-gradient-to-br from-gold to-gold-dark',
+      description: 'Saç Kəsimi + Saqqal Kəsimi + Lepucka'
+    },
+    {
+      id: 'paket-2',
+      name: 'Paket 2',
+      nameAz: 'paket 2',
+      duration: '90 dəq',
+      price: '35 AZN',
+      calLink: 'sananaliyev/paket-2',
+      icon: Package,
+      color: 'bg-gradient-to-br from-gold-dark to-gold',
+      description: 'Saç Kəsimi + Saqqal Kəsimi + Lepucka + Saç Boyama (Xına)',
+      popular: true
     }
   ]
 
@@ -191,6 +214,15 @@ const BookingPage = () => {
                   onClick={() => handleServiceSelect(service)}
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
+                  {/* Popular Badge */}
+                  {service.popular && (
+                    <div className="absolute top-4 left-4 z-20">
+                      <span className="bg-gold text-black px-3 py-1 rounded-full text-xs font-bold">
+                        ƏN POPULYAR
+                      </span>
+                    </div>
+                  )}
+                  
                   {/* Decorative corner accent */}
                   <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-gold/20 to-transparent rounded-bl-full"></div>
                   
@@ -205,10 +237,14 @@ const BookingPage = () => {
                     <h4 className="text-2xl font-heading font-bold text-white mb-2 group-hover:text-gold transition-colors">
                       {service.name}
                     </h4>
-                    <p className="text-sm text-white/60 italic mb-6">{service.nameAz}</p>
+                    {service.description ? (
+                      <p className="text-sm text-white/70 mb-4">{service.description}</p>
+                    ) : (
+                      <p className="text-sm text-white/60 italic mb-6">{service.nameAz}</p>
+                    )}
                     
                     {/* Info Row */}
-                    <div className="flex items-center justify-between mb-6 pb-4 border-b border-white/10">
+                    <div className={`flex items-center justify-between pb-4 border-b border-white/10 ${service.description ? 'mb-6' : 'mb-6'}`}>
                       <div className="flex items-center gap-2 text-white/70">
                         <Clock className="w-5 h-5 text-gold" />
                         <span className="text-sm font-medium">{service.duration}</span>

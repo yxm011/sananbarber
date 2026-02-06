@@ -1,7 +1,11 @@
 import React from 'react'
 import { Scissors, Sparkles, Package } from 'lucide-react'
 
+import { useNavigate } from 'react-router-dom'
+
 const Services = ({ onBookAppointment }) => {
+  const navigate = useNavigate()
+  
   const services = [
     {
       icon: Scissors,
@@ -49,6 +53,7 @@ const Services = ({ onBookAppointment }) => {
 
   const packages = [
     {
+      id: 'paket-1',
       icon: Package,
       title: 'Paket 1',
       price: '20 AZN',
@@ -56,6 +61,7 @@ const Services = ({ onBookAppointment }) => {
       popular: false
     },
     {
+      id: 'paket-2',
       icon: Package,
       title: 'Paket 2',
       price: '35 AZN',
@@ -137,7 +143,7 @@ const Services = ({ onBookAppointment }) => {
                   ))}
                 </ul>
                 <button 
-                  onClick={onBookAppointment}
+                  onClick={() => navigate(`/randevu/${pkg.id}`)}
                   className={`w-full py-3 rounded font-semibold transition-all ${
                     pkg.popular 
                       ? 'bg-gold hover:bg-gold-dark text-black' 
