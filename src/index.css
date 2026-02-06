@@ -3,8 +3,16 @@
 @tailwind utilities;
 
 @layer base {
+  html, body {
+    @apply font-sans antialiased;
+    overflow-x: hidden;
+    font-size: 85%; /* Reduce font size by 15% */
+  }
+  
   body {
     @apply font-body bg-black text-white;
+    width: 100%;
+    max-width: 100vw;
   }
   
   h1, h2, h3, h4, h5, h6 {

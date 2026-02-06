@@ -7,7 +7,7 @@ import WhatsAppButton from './components/WhatsAppButton'
 function App() {
   return (
     <Router basename="/sananbarber">
-      <div className="min-h-screen">
+      <div className="min-h-screen overflow-x-hidden">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/randevu" element={<BookingPage />} />
