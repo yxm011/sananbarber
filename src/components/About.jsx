@@ -46,16 +46,16 @@ const About = () => {
               </div>
             </div>
 
-            <div className="flex flex-wrap gap-4">
-              <div className="flex items-center gap-2 bg-white px-4 py-3 rounded-lg shadow">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div className="flex items-center gap-2 bg-white px-4 py-3 rounded-lg shadow justify-center">
                 <Award className="w-5 h-5 text-gold" />
                 <span className="text-sm font-semibold">Sertifikatlı Mütəxəssis</span>
               </div>
-              <div className="flex items-center gap-2 bg-white px-4 py-3 rounded-lg shadow">
+              <div className="flex items-center gap-2 bg-white px-4 py-3 rounded-lg shadow justify-center">
                 <Users className="w-5 h-5 text-gold" />
                 <span className="text-sm font-semibold">Fərdi Yanaşma</span>
               </div>
-              <div className="flex items-center gap-2 bg-white px-4 py-3 rounded-lg shadow">
+              <div className="flex items-center gap-2 bg-white px-4 py-3 rounded-lg shadow justify-center">
                 <Clock className="w-5 h-5 text-gold" />
                 <span className="text-sm font-semibold">Rahat Saat</span>
               </div>
