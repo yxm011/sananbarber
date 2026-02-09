@@ -85,7 +85,7 @@ const Contact = () => {
 
         <div className="mt-12 rounded-lg overflow-hidden shadow-lg">
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3039.1!2d49.961067!3d40.392222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDIzJzMyLjAiTiA0OcKwNTcnMzkuOCJF!5e0!3m2!1sen!2saz!4v1234567890"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.0922799999997!2d49.95888!3d40.392333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d9e6f3e3e3f%3A0x3e3e3e3e3e3e3e3e!2zU2V5aWQgxJguIMWeaXJ2YW5pIDIzLzE5!5e0!3m2!1sen!2saz!4v1707485674000!5m2!1sen!2saz"
             width="100%"
             height="400"
             style={{ border: 0 }}
